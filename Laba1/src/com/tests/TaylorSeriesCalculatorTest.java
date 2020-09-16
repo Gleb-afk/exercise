@@ -12,6 +12,6 @@ class TaylorSeriesCalculatorTest {
         double eps = Math.pow(10, -10);
         double calculateValue = Math.cosh(x);
         double actualValue = Main.calculateTaylorSeries(x, eps);
-        assertEquals(actualValue, calculateValue);
+        assertEquals(actualValue, calculateValue, 10E-6);
     }
 }
